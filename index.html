@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-     <meta name="yandex-verification" content="73aa9680cf21cb72" />
+    <meta name="yandex-verification" content="73aa9680cf21cb72" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мой первый сайт GG1SHKA</title>
     <style>
@@ -12,48 +12,86 @@
             background-color: #f0f8ff;
             padding: 20px;
         }
-        h1 {
-            color: blue;
+        h1 { color: blue; }
+        .nik { color: red; font-size: 20px; font-weight: bold; }
+        .friends { font-size: 18px; margin-top: 20px; }
+        .deepseek-name { color: blue; }
+        .bunny-name { color: #FFD700; font-weight: bold; }
+        .images { margin-top: 30px; display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+        .images div { text-align: center; }
+        img { max-width: 200px; border-radius: 15px; box-shadow: 0 0 10px rgba(0,0,0,0.2); }
+        .gg-block {
+            margin-top: 50px;
+            border-radius: 24px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.05);
         }
-        .nik {
-            color: red;
-            font-size: 20px;
+        .gg-block h2 {
+            font-size: 28px;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            border-bottom: 3px solid currentColor;
+            display: inline-block;
+        }
+        .gg-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+        }
+        .gg-video {
+            background: #fef9e6;
+            border-radius: 20px;
+            width: 320px;
+            overflow: hidden;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+            transition: 0.2s;
+        }
+        .gg-video:hover { transform: scale(1.02); background: #fff3d1; }
+        .gg-video iframe { width: 100%; height: 190px; border: none; }
+        .gg-video p { padding: 10px; font-weight: bold; text-align: center; margin: 0; background: white; }
+        .playlist-link {
+            display: inline-block;
+            margin-top: 15px;
+            background: #eee;
+            padding: 8px 20px;
+            border-radius: 40px;
+            text-decoration: none;
+            color: #1e3c72;
             font-weight: bold;
         }
-        .friends {
-            font-size: 18px;
+        .gg-post {
+            background: #fff8e0;
+            border-left: 6px solid #ffcc00;
+            padding: 12px 18px;
+            margin: 15px 0;
+            border-radius: 20px;
+            text-align: left;
+        }
+        .partner-block {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
             margin-top: 20px;
         }
-        .deepseek-name {
-            color: blue;
+        .partner-card {
+            background: #2c2c2c;
+            border-radius: 20px;
+            padding: 15px;
+            width: 220px;
+            color: white;
         }
-        .bunny-name {
-            color: #FFD700; /* ярко-насыщенный жёлтый */
-            font-weight: bold;
-        }
-        .images {
-            margin-top: 30px;
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-        }
-        .images div {
-            text-align: center;
-        }
-        img {
-            max-width: 200px;
-            border-radius: 15px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-        }
+        .partner-card h3 { margin: 0 0 10px 0; }
+        .partner-card iframe { width: 100%; height: 120px; border-radius: 12px; }
+        .gg-partner-link { color: #ffaa44; text-decoration: none; }
     </style>
 </head>
 <body>
 
     <h1>ПРИВЕТ ВСЕМ!!!</h1>
-
     <p class="nik">Это мой первый сайт GG1SHKA!</p>
-
     <p class="friends">Создать сайт мне помог мой друг 
         <span class="deepseek-name">DeepSeek</span> 
         <span>которого зовут</span> 
@@ -61,26 +99,82 @@
     </p>
 
     <div class="images">
-        <div>
-            <img src="deepseek.png" alt="Дипсик булочка">
-            <p>🤖🍞</p>
+        <div><img src="deepseek.png" alt="Дипсик булочка"><p>🤖🍞</p></div>
+        <div><img src="avatar.png" alt="Аватарка GG1SHKA"><p>GG1SHKA</p></div>
+    </div>
+
+    <!-- 1️⃣ МУВИКИ (фиолетовый) -->
+    <div class="gg-block" style="border: 2px solid #aa66ff;">
+        <h2 style="color: #aa66ff;">🎬 Мувики</h2>
+        <div class="gg-grid">
+            <div class="gg-video"><iframe src="https://rutube.ru/play/embed/2f8e69b4d5a65c081af7e930bc61c70b/" allowfullscreen></iframe><p>Создал собственный сайт???</p></div>
+            <div class="gg-video"><iframe src="https://rutube.ru/play/embed/34b388c589557557f90b14d84db0359a/" allowfullscreen></iframe><p>МУВИК С AWM и ДИГЛ!!!</p></div>
+            <div class="gg-video"><iframe src="https://rutube.ru/play/embed/f65079a96707705e905b1415d878a935/" allowfullscreen></iframe><p>Новогодний мувик с AWM!!!</p></div>
         </div>
-        <div>
-            <img src="avatar.png" alt="Аватарка GG1SHKA">
-            <p>🏎️ GG1SHKA</p>
+        <a class="playlist-link" href="https://rutube.ru/plst/1399617/" target="_blank">📺 Смотреть весь плейлист мувиков</a>
+    </div>
+
+    <!-- 2️⃣ КАТКИ И ДУЭЛИ (синий) -->
+    <div class="gg-block" style="border: 2px solid #3399ff;">
+        <h2 style="color: #3399ff;">🔥 Катки и дуэли</h2>
+        <div class="gg-grid">
+            <div class="gg-video"><iframe src="https://rutube.ru/play/embed/558916cee8024f54aca5fe5ae0f776c9/" allowfullscreen></iframe><p>Катка в союзники [выйграл]</p></div>
+            <div class="gg-video"><iframe src="https://rutube.ru/play/embed/6f8a75a866eddba3c86af2f461a556ce/" allowfullscreen></iframe><p>Дуэль 2×2 (меня предал тимейт)</p></div>
+            <div class="gg-video"><iframe src="https://rutube.ru/play/embed/eabae73cbf5af6cfcf94a911a5cbded9/" allowfullscreen></iframe><p>Ржачная дуэль против NICZO</p></div>
+        </div>
+        <a class="playlist-link" href="https://rutube.ru/plst/1399620/" target="_blank">⚔️ Смотреть плейлист каток (1)</a>
+        <a class="playlist-link" href="https://rutube.ru/plst/1653568/" target="_blank">⚔️ Смотреть плейлист каток (2)</a>
+    </div>
+
+    <!-- 3️⃣ ГОРЕ ВИДЕО (красный) -->
+    <div class="gg-block" style="border: 2px solid #ff4444;">
+        <h2 style="color: #ff4444;">😅 Горе-видео</h2>
+        <div class="gg-grid">
+            <div class="gg-video"><iframe src="https://rutube.ru/play/embed/d0cdfd487b534ec57517917357f43cba/" allowfullscreen></iframe><p>Дуэль с Хомяш228</p></div>
+            <div class="gg-video"><iframe src="https://rutube.ru/play/embed/a6446868eb96f35f45a11a112e97aecb/" allowfullscreen></iframe><p>Катка в союзниках (я проиграл)</p></div>
+        </div>
+        <a class="playlist-link" href="https://rutube.ru/plst/1653565/" target="_blank">🤦 Смотреть весь плейлист горе-видео</a>
+    </div>
+
+    <!-- 4️⃣ ПОСТЫ (жёлтый) -->
+    <div class="gg-block" style="border: 2px solid #ffcc00;">
+        <h2 style="color: #ffcc00;">📢 Посты</h2>
+        <div class="gg-post">🔥 <strong>28.05.2026</strong> — Запустил свой первый сайт! Добавляй в закладки: <a href="https://gg1shka.github.io" target="_blank">gg1shka.github.io</a></div>
+        <div class="gg-post">🎬 <strong>22.04.2026</strong> — Вышла LEGO-анимация по Half‑Life: Black Mesa! Зацени на RUTUBE.</div>
+        <div class="gg-post">🤝 <strong>15.04.2026</strong> — Ищу партнёров для совместных каток и стримов. Пиши в Telegram.</div>
+    </div>
+
+    <!-- 5️⃣ ПАРТНЁРЫ (серый с красным) -->
+    <div class="gg-block" style="border: 2px solid #bb5555; background: #f8f8f8;">
+        <h2 style="color: #bb5555;">🤝 Партнёры по контенту</h2>
+        <div class="partner-block">
+            <div class="partner-card" style="background: #1a4d8c;">
+                <h3>🔥 TheNiczo (синий)</h3>
+                <iframe src="https://rutube.ru/play/embed/c79e86f8bbfc3b4e6ae7489830da9cfe/" allowfullscreen></iframe>
+                <p><a class="gg-partner-link" href="https://rutube.ru/video/c79e86f8bbfc3b4e6ae7489830da9cfe/" target="_blank">Смотреть его мувик</a></p>
+            </div>
+            <div class="partner-card" style="background: #2a7a3b;">
+                <h3>💚 Антон 47к (голубой+зелёный)</h3>
+                <p>🕹️ Контент-мейкер, друг</p>
+                <p><a class="gg-partner-link" href="#" target="_blank">Скоро его видео</a></p>
+            </div>
+            <div class="partner-card" style="background: #222; border-left: 5px solid #00aaff;">
+                <h3>🖤 KARBON (синий+чёрный+карбон)</h3>
+                <p>⚡ Киберспорт, обзоры</p>
+                <p><a class="gg-partner-link" href="#" target="_blank">Его канал (в разработке)</a></p>
+            </div>
         </div>
     </div>
-<!-- Мои каналы и видео друга -->
-<div style="margin-top: 40px; border-top: 1px solid #ccc; padding-top: 20px;">
-    <p>📢 Мои каналы:</p>
-    <p>
-        <p>📲 Присоединяйся ко мне в MAX: <a href="https://max.ru/join/p69ODQR9_jMqJnl3jXR5W_XKqcs_MPbNsJDgx-Zm-Yg" target="_blank">Приглашение в MAX</a></p>
-        <a href="https://rutube.ru/channel/30907697/" target="_blank">Мой RUTUBE канал</a><br>
-        <a href="https://t.me/GG1SHKATG" target="_blank">Мой Telegram канал</a>
-    </p>
-    <p>🎬 Видео моего друга:</p>
-    <p><a href="https://rutube.ru/video/c79e86f8bbfc3b4e6ae7489830da9cfe/" target="_blank">Смотреть на RUTUBE</a></p>
-</div>
-</div>
+
+    <!-- Ссылки на соцсети -->
+    <div style="margin-top: 60px; padding: 20px; background: #eef0ff; border-radius: 30px;">
+        <p style="font-size: 18px; font-weight: bold;">📢 GG1SHKA: standoff2 с эпичными моментами!! Эксклюзив в Telegram!</p>
+        <p>
+            🚀 <strong>Telegram-канал:</strong> <a href="https://t.me/GG1SHKATG" target="_blank">https://t.me/GG1SHKATG</a><br>
+            📲 <strong>Канал в MAX:</strong> Я пользуюсь мессенджером MAX. Присоединяйся! <a href="https://max.ru/u/f9LHodD0cOKXMqcAP6sR81BfmGY3iSRkWM6bfOLPTNlKVYq7wsUegQDHmMQ" target="_blank">Ссылка на MAX</a><br>
+            💞 <strong>Likee:</strong> <a href="https://likee.video/p/GG1SHKAofficial" target="_blank">GG1SHKAofficial</a>
+        </p>
+    </div>
+
 </body>
 </html>
